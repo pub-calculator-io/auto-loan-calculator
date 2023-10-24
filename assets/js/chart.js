@@ -44,10 +44,25 @@ import("./assets/js/lib/chartjs/chart.js").then((e) => {
 		},
 	};
 
+	const loadChartData = function() {
+		let chart_data = Object.values(_('chart_data').children);
+		let values = chart_data.map(item => item.innerText);
+		let labels = values.map(value => `${value}%`);
+		return { values: values, labels: labels };
+	}
+
+	window.updateChartData = function(values) {
+		let chart_data = loadChartData();
+		donutBig.data.datasets[0].data = chart_data.values;
+		donutBig.data.datasets[0].labels = chart_data.labels;
+		donutBig.update();
+	}
+
+	let chart_data = loadChartData();
 	let data = [
 		{
-			data: [89.4, 10.6],
-			labels: ['89.4%', '10.6%'],
+			data: chart_data.values,
+			labels: chart_data.labels,
 			backgroundColor: [colors[theme].purple, colors[theme].yellow],
 			borderColor: '#DDD6FE',
 			borderWidth: 0,
@@ -149,12 +164,6 @@ import("./assets/js/lib/chartjs/chart.js").then((e) => {
 		});
 
 		donutBig.data.datasets[0].backgroundColor = [colors[theme].purple, colors[theme].yellow];
-		donutBig.update()
-	}
-
-	window.changeChartData = function(values) {
-		donutBig.data.datasets[0].data = values
-		donutBig.data.datasets[0].labels = values.map(value => `${value}%`)
 		donutBig.update()
 	}
 })

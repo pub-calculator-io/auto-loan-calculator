@@ -33,8 +33,7 @@ Libraries in use:
 2. Activate the [Auto Loan Calculator](https://www.calculator.io/auto-loan-calculator/ "Auto Loan Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 
 == Usage ==
-* Add the shortcode `[ci_auto_loan_calculator]` to your page or post and configure default mortgage parameters.
-* If you are using widgets, just add the Auto Loan Calculator to the sidebar through the `Appearance -> Widgets -> Auto Loan Calculator` menu in WordPress.
+* Add the shortcode `[ci_auto_loan_calculator]` to your page, post or sidebar.
 * Add the following code: `<?php display_ci_auto_loan_calculator(); ?>` to your template where you would like the Auto Loan Calculator to appear.
 
 == Screenshots ==

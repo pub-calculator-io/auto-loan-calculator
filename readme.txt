@@ -13,6 +13,8 @@ This free loan calculator computes the monthly payment and overall cost of an au
 
 This free loan calculator computes the monthly payment and overall cost of an auto loan while taking into consideration sales tax, costs, trade-in value, and other factors.
 
+[Auto Loan Calculator Homepage](https://www.calculator.io/auto-loan-calculator/ "Auto Loan Calculator Homepage")
+
 __Shortcode__
 
 Use the Auto Loan Calculator shortcode:

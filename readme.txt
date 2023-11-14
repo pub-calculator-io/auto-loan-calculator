@@ -9,41 +9,29 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 This free loan calculator computes the monthly payment and overall cost of an auto loan while taking into consideration sales tax, costs, trade-in value, and other factors.
 
-== Description ==
-
-This free loan calculator computes the monthly payment and overall cost of an auto loan while taking into consideration sales tax, costs, trade-in value, and other factors.
-
 [https://www.calculator.io/auto-loan-calculator/](https://www.calculator.io/auto-loan-calculator/)
 
-__Auto Loan Calculator Shortcode__
+== Usage ==
+
+Add the Auto Loan Calculator shortcode to your page, post or sidebar:
 
 `[ci_auto_loan_calculator]`
 
-== Installation ==
+Add the following code to your template where you would like the Auto Loan Calculator to appear:
 
-1. Upload the /ci_auto_loan_calculator/ folder to the /wp-content/plugins/ directory.
-2. Activate the [Auto Loan Calculator](https://www.calculator.io/auto-loan-calculator/ "Auto Loan Calculator Homepage") plugin through the "Plugins" menu in WordPress.
-
-== Auto Loan Calculator Usage ==
-
-* Add the shortcode `[ci_auto_loan_calculator]` to your page, post or sidebar.
-* Add the following code: `<?php display_ci_auto_loan_calculator(); ?>` to your template where you would like the Auto Loan Calculator to appear.
+`<?php display_ci_auto_loan_calculator(); ?>`
 
 == Screenshots ==
 
 1. The Auto Loan Calculator Input Form.
 2. The Auto Loan Calculator Calculation Results.
 
-== Libraries used in Auto Loan Calculator ==
+== Installation ==
 
-1. https://mathjs.org/
-2. https://katex.org/
-3. https://github.com/aFarkas/lazysizes
-4. https://github.com/RobinHerbots/Inputmask
-5. https://air-datepicker.com/
-6. https://www.chartjs.org/
+1. Upload the Auto Loan Calculator /ci_auto_loan_calculator/ folder to the /wp-content/plugins/ directory.
+2. Activate the Auto Loan Calculator plugin through the "Plugins" menu in WordPress.
 
 == Changelog ==
 
 = 1.0.0 =
-* Initial release
+* Initial release of Auto Loan Calculator

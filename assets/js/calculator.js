@@ -51,7 +51,7 @@ function calculate() {
 	});
 
 	_('amortization').innerHTML = monthlyResultsHtml;
-	_('chart_data').innerHTML = `<span>${+(total * 100 / totalPayment).toFixed(2)}</span><span>${+(principal * 100 / totalPayment).toFixed(2)}</span>`;
+	_('chart_data').innerHTML = `<span>${+(total * 100 / totalPayment).toFixed(1)}</span><span>${+(principal * 100 / totalPayment).toFixed(1)}</span>`;
 	updateChartData();
 
 	output.val(currencyFormat(total)).set('result_total_amount');

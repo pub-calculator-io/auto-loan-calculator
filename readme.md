@@ -1,4 +1,4 @@
-# Auto Loan Calculator WordPress Widget by [Calculator.iO](https://www.calculator.io/ "Calculator.iO Homepage")
+# Auto Loan Calculator Widget for WordPress
 
 This free loan calculator computes the monthly payment and overall cost of an auto loan while taking into consideration sales tax, costs, trade-in value, and other factors.
 

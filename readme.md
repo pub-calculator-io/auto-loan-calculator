@@ -7,7 +7,7 @@ This free loan calculator computes the monthly payment and overall cost of an au
 
 ## Installation
 
-1. [Download](https://github.com/pub-calculator-io/age-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
+1. [Download](https://github.com/pub-calculator-io/auto-loan-calculator/archive/refs/heads/master.zip) the ZIP file of this repository.
 2. Upload the /auto-loan-calculator-master/ folder to the /wp-content/plugins/ directory.
 3. Activate the [Auto Loan Calculator](https://www.calculator.io/auto-loan-calculator/ "Auto Loan Calculator Homepage") plugin through the "Plugins" menu in WordPress.
 

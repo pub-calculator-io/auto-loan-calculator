@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Auto Loan Calculator by www.calculator.io
+Plugin Name: CI Auto loan calculator
 Plugin URI: https://www.calculator.io/auto-loan-calculator/
 Description: This free loan calculator computes the monthly payment and overall cost of an auto loan while taking into consideration sales tax, costs, trade-in value, and other factors.
 Version: 1.0.0

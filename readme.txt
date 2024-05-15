@@ -24,7 +24,6 @@ Add the following code to your template where you would like the Auto Loan Calcu
 == Screenshots ==
 
 1. The Auto Loan Calculator Input Form.
-2. The Auto Loan Calculator Calculation Results.
 
 == Installation ==
 

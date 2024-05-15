@@ -3,7 +3,6 @@
 This free loan calculator computes the monthly payment and overall cost of an auto loan while taking into consideration sales tax, costs, trade-in value, and other factors.
 
 ![Auto Loan Calculator Input Form](/assets/images/screenshot-1.png "Auto Loan Calculator Input Form")
-![Auto Loan Calculator Calculation Results](/assets/images/screenshot-2.png "Auto Loan Calculator Calculation Results")
 
 ## Installation
 

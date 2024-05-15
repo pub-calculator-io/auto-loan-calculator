@@ -114,7 +114,7 @@
                 		</label>	</div>
                 	<div class="input-wrapper row">
                 		<label class="checkbox">
-                			<input type="checkbox" class="checkbox__input" id="include_fees"   />
+                			<input type="checkbox" class="checkbox__input" id="include_fees"  onchange="relatedToggle(event, 'include_fees')" />
                 			<span class="checkbox__box"></span>
                 				<span class="checkbox__title">Include All Fees in Loan</span>
                 		</label>	</div>
@@ -125,14 +125,17 @@
                 
                 
                 
-                	<button class="button button--primary ml-auto" onclick="calculate(this)">Calculate</button>
+                	<button class="button button--primary ml-auto" onclick="calculate(this); animateElements();" data-action="calculate" id="action-button">Calculate</button>
                 </div>
                 
-                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script"></script>
+                	<script type="text/javascript" src="./assets/js/lib/chartjs/chart.min.js" id="chartjs_lib" defer></script>
+                	<script type="text/javascript" src="./assets/js/chart.js" id="chartjs_script" defer></script>
                 
                 
                 
-                	<script type="text/javascript" src="./assets/js/calculator.js"></script>
+                
+                
+                	<script type="text/javascript" src="./assets/js/calculator.js" defer></script>
             </div>
         </div>
     </div>
@@ -147,8 +150,7 @@
         </svg>
         		<p class="calculator-error__title">There was an error with your calculation.</p>
         	</div>
-        	<div class="col" id="error-list">
-        	</div>
+        	<div class="col" id="error-list"></div>
         </div>        <span id="calculator_result"><div class="calculator-result col">
 	<p class="table-cell table-cell--dark table-cell--only-title">Auto Loan</p>
 	<div id="chart_data" style="display:none">
@@ -156,7 +158,7 @@
 		<span>10.6</span>
 	</div>
 	<div class="table-cell table-cell--age table-cell--only row">
-		<div class="col chart__text">
+		<div class="col chart__text animate">
 			<p class="result-text">Monthly Payment: <span id="result_monthly_payment">$447.43</span></p>
 			<p class="result-text result-text--small-loan">Total Loan Amount: <span id="result_total_amount">$24,000.00</span></p>
 			<p class="result-text result-text--small-loan">Sale Tax: <span id="result_sales_tax">$2,100.00</span></p>
@@ -190,7 +192,7 @@
 			<table class="result-table">
 				<thead>
 					<tr>
-						<th class="indigo text-center">№</th>
+						<th class="indigo text-center">#</th>
 						<th class="indigo">BEGINNING BALANCE</th>
 						<th class="indigo">INTEREST</th>
 						<th class="indigo">PRINCIPAL</th>
@@ -281,7 +283,7 @@
 					<td>$372.46</td>
 					<td>$19,621.23</td>
 				</tr>
-				<tr><th class="indigo text-center" colspan="5">Year #1 End</th></tr><tr>
+				<tr><th class="indigo text-center" colspan="5">Year 1 End</th></tr><tr>
 					<td class="text-center">13</td>
 					<td>$19,621.23</td>
 					<td>$73.58</td>
@@ -365,7 +367,7 @@
 					<td>$389.57</td>
 					<td>$15,041.30</td>
 				</tr>
-				<tr><th class="indigo text-center" colspan="5">Year #2 End</th></tr><tr>
+				<tr><th class="indigo text-center" colspan="5">Year 2 End</th></tr><tr>
 					<td class="text-center">25</td>
 					<td>$15,041.30</td>
 					<td>$56.40</td>
@@ -449,7 +451,7 @@
 					<td>$407.46</td>
 					<td>$10,250.97</td>
 				</tr>
-				<tr><th class="indigo text-center" colspan="5">Year #3 End</th></tr><tr>
+				<tr><th class="indigo text-center" colspan="5">Year 3 End</th></tr><tr>
 					<td class="text-center">37</td>
 					<td>$10,250.97</td>
 					<td>$38.44</td>
@@ -533,7 +535,7 @@
 					<td>$426.18</td>
 					<td>$5,240.57</td>
 				</tr>
-				<tr><th class="indigo text-center" colspan="5">Year #4 End</th></tr><tr>
+				<tr><th class="indigo text-center" colspan="5">Year 4 End</th></tr><tr>
 					<td class="text-center">49</td>
 					<td>$5,240.57</td>
 					<td>$19.65</td>
@@ -617,7 +619,7 @@
 					<td>$445.76</td>
 					<td>$0.00</td>
 				</tr>
-				<tr><th class="indigo text-center" colspan="5">Year #5 End</th></tr></tbody>
+				<tr><th class="indigo text-center" colspan="5">Year 5 End</th></tr></tbody>
 			</table>
 		</div>
 	</div>

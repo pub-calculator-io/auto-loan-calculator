@@ -45,7 +45,7 @@ function calculate() {
 			<td>${currencyFormat(r.endBalance)}</td>
 	</tr>`;
 		if((index + 1) % 12 === 0 || (index + 1) === monthlyResults.length) {
-			let title = 'Year #{1} End'.replace('{1}', Math.ceil((index + 1) / 12).toString());
+			let title = 'Year {1} End'.replace('{1}', Math.ceil((index + 1) / 12).toString());
 			monthlyResultsHtml += `<th class="indigo text-center" colspan="5">${title}</th>`;
 		}
 	});
